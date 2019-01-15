@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+.container {
+    background-color: #f7f7f7;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 10;
+}
+
+nav ul {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    background-color: lightcoral;
+}
+
+nav ul li {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+nav ul li a {
+    color: black;
+    display: block;
+    padding: 14px 25px 14px 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: coral;
+}
+
+nav > ul::after {
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+    content: '';
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    background-color: lightcoral;
+    width: 200px;
+}
+
+nav ul li ul li {
+    float: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+main {
+    padding-left: 50px;
+    padding-top: 87px;
+    padding-bottom: 30px;
+}
+
+.images {
+    padding-left: 0;
+    padding-top: 57px;
+}
+
+.edit {
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333333;
+    font-size: 12px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact input {
+    border: 3px solid #efefef;
+    background-color: #e7c3c3;
+    width: 350px;
+    height: 27px;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+textarea {
+    border: 3px solid #efefef;
+    background-color: #e7c3c3;
+    width: 350px;
+    height: 150px;
+    margin-top: 3px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+select {
+    border: 3px solid #efefef;
+    background-color: #e7c3c3;
+    width: 390px;
+    height: 33px;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    padding-left: 8px;
+}
+
+input[type="submit"] {
+    width: 390px;
+    height: 33px;
+    border: 3px solid #efefef;
+    background-color: #e7c3c3;
+}
+
+[type="submit"]:active {
+    position: relative;
+    top: 1px;
+}
+
+main .error {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #dca7a7;
+    height: 40px;
+    padding: 0 15px 0 15px;
+}
+
+td {
+    background-color: #e7c3c3;
+    height: 35px;
+    text-align: center;
+}
+
+.header {
+    text-align: left;
+    padding: 0 25px;
+}
+
+p {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.admin_header {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+.pillow {
+    height: 45px;
+}
+
+footer {
+    margin-top: -45px;
+}
+
+.footer {
+    background-color: lightcoral;
+    height: 27px;
+    margin: 0 auto;
+    width: 1175px;
+    padding-top: 18px;
+    padding-left: 25px;
+}
+
+span {
+    font: 12px bold;
+}
